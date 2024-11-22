@@ -2,7 +2,7 @@
 
 ---
 <button id="playPauseButton">
-    <img id="playPauseImage" src="../../public/img/musica.png" alt="Reproducir">
+    <img id="playPauseImage" src="../../public/img/musica.webp" alt="Reproducir">
   </button>
   <audio id="audio" src="../../public/voz/musica.mp3"></audio>
   
@@ -14,10 +14,10 @@
     playPauseButton.addEventListener('click', () => {
       if (audio.paused) {
         audio.play();
-        playPauseImage.src = '../../public/img/musica.png'; // Cambia a la imagen de pausa
+        playPauseImage.src = '../../public/img/musica.webp'; // Cambia a la imagen de pausa
       } else {
         audio.pause();
-        playPauseImage.src = '../../public/img/detener.png'; // Cambia a la imagen de reproducir
+        playPauseImage.src = '../../public/img/detener.webp'; // Cambia a la imagen de reproducir
       }
     });
   </script>

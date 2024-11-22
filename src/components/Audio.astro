@@ -1,0 +1,24 @@
+---
+
+---
+<button id="playPauseButton">
+    <img id="playPauseImage" src="../../public/musica.png" alt="Reproducir">
+  </button>
+  <audio id="audio" src="../../public/musica.mp3"></audio>
+  
+  <script>
+    const audio = document.getElementById('audio') as HTMLAudioElement;
+    const playPauseImage = document.getElementById('playPauseImage') as HTMLImageElement;
+    const playPauseButton = document.getElementById('playPauseButton');
+  
+    playPauseButton.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playPauseImage.src = '../../public/musica.png'; // Cambia a la imagen de pausa
+      } else {
+        audio.pause();
+        playPauseImage.src = '../../public/detener.png'; // Cambia a la imagen de reproducir
+      }
+    });
+  </script>
+  

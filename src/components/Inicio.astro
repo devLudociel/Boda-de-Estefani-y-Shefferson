@@ -1,0 +1,58 @@
+---
+import '@fontsource/lobster';
+import Audio from './Audio.astro';
+---
+
+
+<header class="bg-white">
+
+    <div class="flex max-w-full">
+        <img src="../../public/flor.png" alt="" class="lg:h-52 sm:block lg:block">
+        <img src="../../public/flor.png" alt="" class="lg:h-52 sm:hidden lg:block">
+        <img src="../../public/flor.png" alt="" class="lg:h-52 sm:hidden lg:block xl:block">
+        <img src="../../public/flor.png" alt="" class="lg:h-52 sm:hidden lg:hidden xl:block xxl:block">
+        <img src="../../public/flor.png" alt="" class="lg:h-52 sm:hidden lg:hidden xl:hidden xxl:block">
+        <img src="../../public/flor.png" alt="" class="lg:h-52 sm:hidden lg:hidden xl:block xxl:block">
+        <img src="../../public/flor.png" alt="" class="lg:h-52 sm:hidden lg:hidden xl:hidden xxl:block">
+        <img src="../../public/flor.png" alt="" class="lg:h-52 sm:hidden lg:hidden xl:hidden xxl:block">
+    </div>
+
+    <div class="container px-4 py-4 mx-auto">
+        <div class="items-center lg:flex">
+            <div class="w-full lg:w-1/2">
+                <div class="lg:max-w-lg items-center text-center leading-8">
+                    <h1 class="text-pink-200 font-bold lg:text-6xl md:text-4xl sm:text-3xl name mb-4 lg:leading-[80px] text-main">Estefani Alexandra y Shefferson José </h1>
+                    <span class="lg:text-4xl md:text-2xl sm:text-xl highlight"> Celebran su Matrimonio, y estas cordialmente invitado</span>
+
+                    <div class="flex flex-col mt-2 space-y-3 lg:space-y-0 lg:flex-row lg:h-36">
+                        <Audio />
+                    </div>
+                    <span class="text-black font-bold lg:text-2xl">Pulsa sobre el </span> <span class=" underline decoration-main lg:text-2xl font-bold">Corazón</span> <span class="text-black font-bold lg:text-2xl"> para escuchar</span>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+                <img class="w-full h-full max-w-md filtro" src="../../public/boda1.png" alt="Novios Abrazados">
+            </div>
+        </div>
+        <div class="flex flex-col mt-12 lg:max-w-full">
+            <p class="lg:text-5xl md:text-2xl sm:text-xl text-wrap name leading-3">
+                "Es mejor ser dos que uno, porque ambos pueden ayudarse mutuamente a lograr el Éxito."
+            </p>
+            <span class="text-main lg:text-2xl font-bold"> Eclesiastés 4:9</span>
+        </div>
+    </div>
+
+
+
+</header>
+
+<style>
+    .name{
+        font-family: 'Lobster', system-ui;
+    }
+
+    .filtro{
+        mask-image: linear-gradient(black 80%, transparent)
+    }
+</style>

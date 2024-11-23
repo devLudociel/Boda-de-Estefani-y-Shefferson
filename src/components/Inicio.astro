@@ -21,8 +21,8 @@ import Audio from './Audio.astro';
         <div class="items-center lg:flex">
             <div class="w-full lg:w-1/2">
                 <div class="lg:max-w-lg items-center text-center leading-8">
-                    <h1 class="text-pink-200 font-bold lg:text-6xl md:text-4xl sm:text-3xl name mb-4 lg:leading-[80px] text-main">Estefani Alexandra y Shefferson José </h1>
-                    <span class="lg:text-4xl md:text-2xl sm:text-xl highlight"> Celebran su Matrimonio, y estas cordialmente invitado</span>
+                    <h1 class="text-pink-200 font-bold lg:text-6xl md:text-4xl sm:text-3xl name mb-4 lg:leading-[80px] text-main">Shefferson José y Estefani Alexandra</h1>
+                    <span class="lg:text-6xl md:text4xl sm:text-2xl highlight tracking-in-expand text-main name"> ¡ Nos Casamos !</span>
 
                     <div class="flex flex-col mt-2 space-y-3 lg:space-y-0 lg:flex-row lg:h-36">
                         <Audio />
@@ -55,4 +55,35 @@ import Audio from './Audio.astro';
     .filtro{
         mask-image: linear-gradient(black 80%, transparent)
     }
+
+    .tracking-in-expand {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 </style>

@@ -17,7 +17,9 @@ export default {
 			main: "#ef9ca4",
 			white:"#fff",
 		  },
-		extend: {},
+		extend: {
+			
+		},
 	},
 	plugins: [
 	],

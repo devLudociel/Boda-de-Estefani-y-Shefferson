@@ -14,7 +14,7 @@ export default {
 			serif: ['Merriweather', 'serif'],
 		  },
 		  colors:{
-			main: "#ef9ca4",
+			main: "#FFE3E3",
 			white:"#fff",
 		  },
 		extend: {

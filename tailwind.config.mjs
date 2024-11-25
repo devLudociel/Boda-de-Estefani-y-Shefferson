@@ -10,11 +10,11 @@ export default {
 			xxl: "2560px",
 		  },
 		  fontFamily: {
-			sans: ['Lobster', 'sans-serif'],
+			sans: ['satisfy', 'sans-serif'],
 			serif: ['Merriweather', 'serif'],
 		  },
 		  colors:{
-			main: "#FFE3E3",
+			main: "#F7B5CA",
 			white:"#fff",
 		  },
 		extend: {
